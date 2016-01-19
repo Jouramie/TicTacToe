@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="root" maxHeight="614.0" maxWidth="430.0" minHeight="614.0" minWidth="430.0" prefHeight="614.0" prefWidth="430.0" style="-fx-background-color: #FFD699;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <Pane prefHeight="102.0" prefWidth="430.0">
+         <children>
+            <ImageView fitHeight="45.0" fitWidth="280.0" layoutX="75.0" layoutY="14.0">
+               <image>
+                  <Image url="@../../ressources/Captttre.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="215.0" layoutX="108.0" layoutY="63.0">
+               <image>
+                  <Image url="@../../ressources/rtht.PNG" />
+               </image>
+            </ImageView>
+            <Label fx:id="label" layoutX="199.0" layoutY="53.0" prefHeight="25.0" prefWidth="32.0" text="-" textFill="#865100">
+               <font>
+                  <Font name="System Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="temps" layoutX="379.0" prefHeight="17.0" prefWidth="51.0" stylesheets="@application.css" textFill="#784004">
+               <font>
+                  <Font name="Berlin Sans FB" size="14.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="430.0" fitWidth="436.0" layoutX="-5.0" layoutY="187.0">
+         <image>
+            <Image url="@../../ressources/grille.JPG" />
+         </image>
+      </ImageView>
+      <Pane layoutY="98.0" prefHeight="102.0" prefWidth="430.0">
+         <children>
+            <Group>
+               <children>
+                  <CheckBox fx:id="joueurii" layoutX="168.0" layoutY="44.0" mnemonicParsing="false" onAction="#Checkbox" prefHeight="27.0" prefWidth="85.0" styleClass="c2" stylesheets="@application.css" text="2 Joueurs" />
+                  <CheckBox fx:id="joueuri" layoutX="172.0" layoutY="20.0" mnemonicParsing="false" onAction="#Checkbox" selected="true" styleClass="c1" stylesheets="@application.css" text="1 Joueur" />
+               </children>
+            </Group>
+      
+            <Button fx:id="reco" layoutX="35.0" layoutY="27.0" mnemonicParsing="false" onAction="#rejouer" prefHeight="38.0" prefWidth="102.0" styleClass="reco" text="Recommencer" />
+      
+            <Button fx:id="quit" layoutX="294.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#quit" prefHeight="38.0" prefWidth="102.0" styleClass="quit" text="Quitter" />
+         </children>
+      </Pane>
+      <Pane fx:id="p00" focusTraversable="true" layoutX="9.0" layoutY="196.0" onMouseClicked="#clic" prefHeight="136.0" prefWidth="132.0">
+         <children>
+            <ImageView fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false" fx:id="x00">
+               <image>
+                  <Image url="@../../ressources/x.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="o00" fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false">
+               <image>
+                  <Image url="@../../ressources/op.PNG" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="p01" focusTraversable="true" layoutX="150.0" layoutY="196.0" onMouseClicked="#clic" prefHeight="136.0" prefWidth="132.0">
+         <children>
+            <ImageView fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false" fx:id="x01">
+               <image>
+                  <Image url="@../../ressources/x.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="o01" fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false">
+               <image>
+                  <Image url="@../../ressources/op.PNG" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="p02" focusTraversable="true" layoutX="289.0" layoutY="196.0" onMouseClicked="#clic" prefHeight="136.0" prefWidth="132.0">
+         <children>
+            <ImageView fx:id="o02" fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false">
+               <image>
+                  <Image url="@../../ressources/op.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false" fx:id="x02">
+               <image>
+                  <Image url="@../../ressources/x.PNG" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="p10" focusTraversable="true" layoutX="9.0" layoutY="334.0" onMouseClicked="#clic" prefHeight="136.0" prefWidth="132.0">
+         <children>
+            <ImageView fx:id="o10" fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false">
+               <image>
+                  <Image url="@../../ressources/op.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false" fx:id="x10">
+               <image>
+                  <Image url="@../../ressources/x.PNG" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="p11" focusTraversable="true" layoutX="147.0" layoutY="334.0" onMouseClicked="#clic" prefHeight="136.0" prefWidth="132.0">
+         <children>
+            <ImageView fx:id="o11" fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false">
+               <image>
+                  <Image url="@../../ressources/op.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false" fx:id="x11">
+               <image>
+                  <Image url="@../../ressources/x.PNG" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="p12" focusTraversable="true" layoutX="289.0" layoutY="334.0" onMouseClicked="#clic" prefHeight="136.0" prefWidth="132.0">
+         <children>
+            <ImageView fx:id="o12" fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false">
+               <image>
+                  <Image url="@../../ressources/op.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false" fx:id="x12">
+               <image>
+                  <Image url="@../../ressources/x.PNG" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="p20" focusTraversable="true" layoutX="9.0" layoutY="474.0" onMouseClicked="#clic" prefHeight="136.0" prefWidth="132.0">
+         <children>
+            <ImageView fx:id="o20" fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false">
+               <image>
+                  <Image url="@../../ressources/op.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false" fx:id="x20">
+               <image>
+                  <Image url="@../../ressources/x.PNG" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="p21" focusTraversable="true" layoutX="149.0" layoutY="474.0" onMouseClicked="#clic" prefHeight="136.0" prefWidth="132.0">
+         <children>
+            <ImageView fx:id="o21" fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false">
+               <image>
+                  <Image url="@../../ressources/op.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false" fx:id="x21">
+               <image>
+                  <Image url="@../../ressources/x.PNG" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="p22" focusTraversable="true" layoutX="289.0" layoutY="474.0" onMouseClicked="#clic" prefHeight="136.0" prefWidth="132.0">
+         <children>
+            <ImageView fx:id="o22" fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false">
+               <image>
+                  <Image url="@../../ressources/op.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="102.0" fitWidth="110.0" layoutX="11.0" layoutY="17.0" visible="false" fx:id="x22">
+               <image>
+                  <Image url="@../../ressources/x.PNG" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="430.0" layoutY="183.0" mouseTransparent="true" stroke="BLACK" strokeType="INSIDE" visible="false" width="430.0" />
+   </children>
+</Pane>
